@@ -1,0 +1,8 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "hugo-theme-learn"
+baseurl = "http://example.org/"
+search = true
+
+[params]
+  menu = [ "workshop", "resources" ]

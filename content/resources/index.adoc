@@ -1,0 +1,11 @@
++++
+date = "2016-12-23T16:42:39-05:00"
+toc = true
+next = "/next/path"
+prev = "/prev/path"
+weight = 0
+title = "Resources"
+
++++
+
+Lorem Ipsum

@@ -1,0 +1,11 @@
++++
+prev = "/prev/path"
+weight = 5
+title = "Links"
+date = "2016-12-23T16:40:41-05:00"
+toc = true
+next = "/next/path"
+
++++
+
+Lorem Ipsum

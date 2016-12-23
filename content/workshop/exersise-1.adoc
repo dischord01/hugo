@@ -1,0 +1,49 @@
++++
+toc = true
+next = "/next/path"
+prev = "/prev/path"
+weight = 5
+title = "Exercise 1"
+date = "2016-12-23T14:54:32-05:00"
+
++++
+
+:imagesdir: ../../images
+
+== Exercise One - Install Docker
+
+
+
+=== Install Docker
+
+.Install Docker
+[source]
+----
+$ sudo -i
+# yum install -y docker
+----
+Edit docker-storage-setup script. Add the following configuration lines of `DEVS=dev/xvdb` & `VG=docker-vg` to the `/etc/sysconfig/docker-storage-setup` file.
+
+.Docker storage setup
+[source]
+----
+# echo -e "DEVS=/dev/xvdb\nVG=docker-vg" >> /etc/sysconfig/docker-storage-setup
+----
+
+
+=== Start Docker
+
+To start the docker binary and have it managed by link:https://fedoramagazine.org/what-is-an-init-system/[`systemd`]
+we first need to enable it and tell systemd that we want it to run a boot time.
+Then to start the docker daemon right away we use the start command.
+
+[source]
+----
+# systemctl enable docker
+
+# systemctl start docker
+----
+
+
+image::redhat.svg['Red Hat']
+
